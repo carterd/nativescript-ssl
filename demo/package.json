@@ -9,10 +9,10 @@
     }
   },
   "dependencies": {
-    "nativescript-ssl": "../src",
+    "nativescript-ssl": "file:../src",
     "nativescript-theme-core": "^1.0.4",
     "nativescript-unit-test-runner": "^0.3.4",
-    "tns-core-modules": "^3.4.0"
+    "tns-core-modules": "^3.4.1"
   },
   "devDependencies": {
     "awesome-typescript-loader": "~3.1.3",

@@ -1,7 +1,7 @@
 {
     "name": "nativescript-ssl",
     "version": "1.0.0",
-    "description": "Your awesome NativeScript plugin.",
+    "description": "SSL/TLS NativeScript plugin.",
     "main": "ssl",
     "typings": "index.d.ts",
     "nativescript": {
@@ -11,6 +11,7 @@
         }
     },
     "scripts": {
+        "prebuild": "cd ../native-src/android/ && gradlew.bat",
         "tsc": "tsc -skipLibCheck",
         "build": "npm i && tsc",
         "postclone": "npm i && node scripts/postclone.js && cd ../demo && npm i && cd ../src && npm run plugin.link",
@@ -33,14 +34,14 @@
         "iOS"
     ],
     "author": {
-        "name": "Your Name",
-        "email": "youremail@yourdomain.com"
+        "name": "Derek Carter",
+        "email": "carter_derek@live.com"
     },
     "bugs": {
-        "url": "https://github.com/carter_derek@live.com/nativescript-ssl/issues"
+        "url": "https://github.com/carterd/nativescript-ssl/issues"
     },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/carter_derek@live.com/nativescript-ssl",
+    "homepage": "https://github.com/carterd/nativescript-ssl",
     "readmeFilename": "README.md",
     "devDependencies": {
         "tns-core-modules": "^3.1.0",
@@ -51,5 +52,9 @@
         "tslint": "^5.0.0"
     },
     "dependencies": {},
-    "bootstrapper": "nativescript-plugin-seed"
+    "bootstrapper": "nativescript-plugin-seed",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/carterd/nativescript-ssl.git"
+    }
 }
